@@ -1,0 +1,15 @@
+<form >
+<div>
+    <label>ID:</label>
+    <input [(ngModel)]="person.id" placeholder="ID">
+</div>
+<div>
+    <label>First name:</label>
+    <input [(ngModel)]="person.Fname" placeholder="First name">
+</div>
+<div>
+    <label>Surname:</label>
+    <input [(ngModel)]="person.Sname" placeholder="Surname">
+</div>
+    <input type="submit" value="Insert" (click)="onSubmit()"/>
+</form>
