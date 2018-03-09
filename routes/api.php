@@ -13,6 +13,22 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+/*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});*/
+
+
+Route::get('/', function () {
+    return view('welcome');
 });
+
+Route::get('/portal' , function (){
+    return view('users/user');
+});
+
+Route::get('/insert','Users\UsersController@InsertUserInput');
+Route::get('/list','Users\UsersController@list');
+Route::options('/insert', function(){
+    return response()->json();
+});
+Route::post('/insert', 'Users\UsersController@InsertUserInput');

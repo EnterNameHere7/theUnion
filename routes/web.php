@@ -21,5 +21,4 @@ Route::get('/portal' , function (){
 
 Route::get('/insert','Users\UsersController@InsertUserInput');
 Route::get('/list','Users\UsersController@list');
-
-//Route::post('/users', 'Users\UsersController@hello');
+Route::post('/insert', 'Users\UsersController@InsertUserInput');

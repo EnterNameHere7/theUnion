@@ -3,7 +3,7 @@
 
 </head>
 <body>
-<form method='get' action="/larevel/insert">
+<form method='post' action="/larevel/api/insert">
     <h1>Please enter a name</h1>
     <input type="number" name="id" placeholder="ID" class="NameInput"><br>
     <input name="name" placeholder="first name" class='NameInput'/><br>
